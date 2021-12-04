@@ -280,6 +280,7 @@ p{
   .hero-btn{
     display: inline-block;
     text-decoration: none;
+    margin: 5px;
     color:black;
     border: 1px solid #33D8FF ;
     padding: 11px 33px;
@@ -293,3 +294,29 @@ p{
     background: #33D8FF;
     transition: 1s;
 }
+.code-header{
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(hourcode.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.code-header nav a img{
+  width: 150px;
+}
+
+.pode-header{
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(QRUP.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.pode-header nav a img{
+  width: 150px;
+}
+
