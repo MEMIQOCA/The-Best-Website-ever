@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,99 +8,122 @@
     <title>best website ever</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,600;1,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script type="text/JavaScript">
+        function updateclock() { var now = new Date(); var dname = now.getDay(), mo = now.getMonth(), dnum = now.getDate(), yr = now.getFullYear(), hou = now.getHours(), min = now.getMinutes(), sec = now.getSeconds(), pe = "AM"; if(hou == 0 ){ hou = 12; } if(hou
+        > 12){ hou = hou - 12; pe = "PM"; } Number.prototype.pad = function(digits) { for(var n = this.toString(); n.length
+        < digits; n=0 +n); return n; }; var month=[ "January", "February", "March", "April", "May", "June", "July", "Augest", "September", "October", "November", "December"]; var week=[ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
+            "Saturday"]; var ids=[ "dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"]; var values=[ week[dname], month[mo], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe]; for(var i=0 ; i < ids.length; i++) document.getElementById(ids[i]).firstChild.nodeValue=values[i];
+            } function initClock() { updateclock(); window.setInterval( "updateclock();", 1000); } </script>
 </head>
-<body>
-   <section class="header">
-       <nav>
-           <a href="index.html"><img src="NEW LOGO.png"></a>
-           <div class="nav-links" id="navLinks">
-            <i class="fa fa-times" onclick="hideMenu()"></i>
-               <ul>
-                   <li><a href="index.html">HOME</a></li>
-                   <li><a href="projects.html">WEBSITE PROJECT</a></li>
-                   <li><a href="HOUR OF CODE.html">HOUR OF CODE</a></li>
-                   <li><a href="TEAM MEMBERS.html">TEAM MEMBERS</a></li>
-               </ul>
-           </div>
-           <i class="fa fa-bars" onclick="showMenu()"></i>
-       </nav>
-       <div class="text-box">
-           <h1>
-               QUATECH
-           </h1>
-           <p>
-            We are four people in a group: Narmin Akbarova, Natavan Hasanova, Aykhan Mammadli, Kanan Abdullayev.<br> 
-            Our team number is 03. The name of our team is “QUATECH”.
-           </p>
-           <a href="" class="Button">Check Our Webpage for more information</a>
-       </div>
-    </section>
-<!---------- members --------->
-<section class="members">
-    <h1>GROUP MEMBERS</h1>
-   
-    <div class="row">
-        <div class="members-col">
-            <img src="knan.jpeg">
-            <div class="layer">
-                <h3>KANAN ABDULLAYEV</h3>
-            </div>
-        </div>
-        <div class="members-col">
-            <img src="KLP.jpeg">
-            <div class="layer">
-                <h3>NARMIN AKBAROVA</h3>
-            </div>
-        </div>
-        <div class="members-col">
-            <img src="je.jpeg">
-            <div class="layer">
-                <h3>NATAVAN HASANOVA</h3>
-            </div>
-        </div>
-        <div class="members-col">
-            <img src="ozum.jpg">
-            <div class="layer">
-                <h3>KANAN ABDULLAYEV</h3>
-            </div>
-        </div>
-    </div>
 
-</section>
+<body onload="initClock()">
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="NEW LOGO.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="projects.html">WEBSITE PROJECT</a></li>
+                    <li><a href="HOUR OF CODE.html">HOUR OF CODE</a></li>
+                    <li><a href="TEAM MEMBERS.html">TEAM MEMBERS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>
+                QUATECH
+            </h1>
+            <p>
+                We are four people in a group: Narmin Akbarova, Natavan Hasanova, Aykhan Mammadli, Kanan Abdullayev.<br> Our team number is 03. The name of our team is “QUATECH”.
+            </p>
+            <a href="" class="Button">Check Our Webpage for more information</a>
+        </div>
+    </section>
+    <!---------- members --------->
+    <section class="members">
+        <h1>GROUP MEMBERS</h1>
+
+        <div class="row">
+            <div class="members-col">
+                <img src="knan.jpeg">
+                <div class="layer">
+                    <h3>KANAN ABDULLAYEV</h3>
+                </div>
+            </div>
+            <div class="members-col">
+                <img src="KLP.jpeg">
+                <div class="layer">
+                    <h3>NARMIN AKBAROVA</h3>
+                </div>
+            </div>
+            <div class="members-col">
+                <img src="je.jpeg">
+                <div class="layer">
+                    <h3>NATAVAN HASANOVA</h3>
+                </div>
+            </div>
+            <div class="members-col">
+                <img src="kha.jpeg">
+                <div class="layer">
+                    <h3>AYKHAN MAMMADLI</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
     <!---------- contact us --------->
     <section class="us">
         <h4>CONTACT US</h4>
-        
+
         <div class="icons">
             <i class="fa fa-facebook"></i>
             <i class="fa fa-twitter"></i>
             <i class="fa fa-instagram"></i>
             <i class="fa fa-linkedin"></i>
-            
+
         </div>
 
 
     </section>
 
+    <div class="datetime">
+        <div class="date">
+            <span id="dayname">Day</span>,
+            <span id="month">Month</span>
+            <span id="daynum">00</span>,
+            <span id="year">Year</span>
+        </div>
+        <div class="time">
+            <span id="hour">00</span>:
+            <span id="minutes">00</span>:
+            <span id="seconds">00</span>
+            <span id="period">AM</span>
+        </div>
+    </div>
 
 
 
 
 
 
-  
-<script>
-    var navLinks=document.getElementById("navLinks");
-    function showMenu(){
-        navLinks.style.right="0";
-    }
-    function hideMenu(){
-        navLinks.style.right="-200px";
-    }
-</script>
-    
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
 </body>
+
 </html>
